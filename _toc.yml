@@ -4,4 +4,8 @@ parts:
   - caption: 产品特性
     chapters:
       - file: features/acting/README.md
+        sections:
+          - file: features/acting/assigning_actions.md
+          - file: features/acting/confirming_assignments.md
+          - file: features/acting/creating_actions.md
       - file: features/noting/README.md
