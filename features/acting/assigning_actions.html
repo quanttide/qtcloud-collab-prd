@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>行动 &#8212; 量潮示例文档项目</title>
+    <title>分配待办 &#8212; 量潮示例文档项目</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/acting/README';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features/acting/assigning_actions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="分配待办" href="assigning_actions.html" />
-    <link rel="prev" title="简介" href="../../index.html" />
+    <link rel="next" title="确认分配" href="confirming_assignments.html" />
+    <link rel="prev" title="行动" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,8 +175,8 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">产品特性</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">行动</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="assigning_actions.html">分配待办</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">行动</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">分配待办</a></li>
 <li class="toctree-l2"><a class="reference internal" href="confirming_assignments.html">确认分配</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_actions.html">创建待办</a></li>
 </ul>
@@ -236,7 +236,7 @@
       
       
       
-      <li><a href="../../_sources/features/acting/README.md" target="_blank"
+      <li><a href="../../_sources/features/acting/assigning_actions.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -320,7 +320,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>行动</h1>
+    <h1>分配待办</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -330,9 +330,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">用户故事</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">流程设计</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">验收标准</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">验收标准</a></li>
 </ul>
             </nav>
         </div>
@@ -345,29 +343,16 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>行动<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>分配待办<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>用户故事<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>作为分配者，我希望能够快速创建待办事项，并根据实际情况决定是否立即分配给特定的人。这样我可以更好地管理任务，确保重要的事项得到及时处理。</p>
-<p>作为被分配者，我希望能够清晰地了解自己被分配的任务，并且有一个明确的渠道来确认接收任务。这样我可以更好地规划自己的工作，避免遗漏重要任务。</p>
-</section>
-<section id="id3">
-<h2>流程设计<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>创建待办 (Create Action)：分配者创建一个新的待办，并指定是否立即分配给某人。如果待办暂时不分配给任何人，可以标记为“未分配”状态。</p></li>
-<li><p>分配待办（Assign Action)：分配者将任务分配给指定的被分配者。这可以通过待办管理界面中的一个额外步骤来实现。系统需要记录分配的历史信息，包括分配的时间、分配者和被分配者。</p></li>
-<li><p>确认待办 (Confirm Assignment)：被分配者接收到任务后，需要有一个确认接收的步骤。这可以通过邮件通知或应用内的消息提醒来实现。确认接收后，待办状态会更新为“已分配”，并可开始处理。</p></li>
-</ol>
-</section>
-<section id="id4">
-<h2>验收标准<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2>验收标准<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>分配者视角：创建和分配功能可用。</p></li>
-<li><p>被分配者视角：确认功能可用。</p></li>
+<li><p>能从用户列表中准确选择被分配者，无加载错误或选择不准确的情况。</p></li>
+<li><p>可以设置合理的任务优先级和添加详细的任务说明，且这些信息在分配后能正确显示在被分配者的任务界面中。</p></li>
+<li><p>分配完成后，系统立即记录分配的历史信息，包括准确的分配时间、分配者身份和被分配者身份。</p></li>
+<li><p>可以查看已分配任务的状态和历史记录，且信息显示完整、准确。</p></li>
 </ul>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,20 +386,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../index.html"
+       href="README.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">简介</p>
+        <p class="prev-next-title">行动</p>
       </div>
     </a>
     <a class="right-next"
-       href="assigning_actions.html"
+       href="confirming_assignments.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">分配待办</p>
+        <p class="prev-next-title">确认分配</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -434,9 +419,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">用户故事</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">流程设计</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">验收标准</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">验收标准</a></li>
 </ul>
   </nav></div>
 
