@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>分配待办 &#8212; 量潮协作云</title>
+    <title>创建待办 &#8212; 量潮协作云</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/acting/assigning_actions';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'stories/acting/creating_actions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="确认分配" href="confirming_assignments.html" />
-    <link rel="prev" title="行动" href="README.html" />
+    <link rel="next" title="转换待办" href="converting/README.html" />
+    <link rel="prev" title="确认分配" href="confirming_assignments.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,15 +173,28 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">产品特性</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">用户画像</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../personas/executors.html">执行者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../personas/coordinators.html">统筹者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../personas/negotiators.html">协商者</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">用户故事</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">行动</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">分配待办</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assigning_actions.html">分配待办</a></li>
 <li class="toctree-l2"><a class="reference internal" href="confirming_assignments.html">确认分配</a></li>
-<li class="toctree-l2"><a class="reference internal" href="creating_actions.html">创建待办</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">创建待办</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="converting/README.html">转换待办</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="converting/converting_actions_to_plans.html">转换待办为计划</a></li>
+</ul>
+</details></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../noting/README.html">记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deciding/README.html">决策</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../planning/README.html">计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting/README.html">汇报</a></li>
 </ul>
 
     </div>
@@ -236,7 +249,7 @@
       
       
       
-      <li><a href="../../_sources/features/acting/assigning_actions.md" target="_blank"
+      <li><a href="../../_sources/stories/acting/creating_actions.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -320,7 +333,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>分配待办</h1>
+    <h1>创建待办</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -343,14 +356,13 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>分配待办<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>创建待办<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
 <h2>验收标准<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>能从用户列表中准确选择被分配者，无加载错误或选择不准确的情况。</p></li>
-<li><p>可以设置合理的任务优先级和添加详细的任务说明，且这些信息在分配后能正确显示在被分配者的任务界面中。</p></li>
-<li><p>分配完成后，系统立即记录分配的历史信息，包括准确的分配时间、分配者身份和被分配者身份。</p></li>
-<li><p>可以查看已分配任务的状态和历史记录，且信息显示完整、准确。</p></li>
+<li><p>能够轻松在系统中输入待办事项的描述，没有输入限制问题或格式错误提示。</p></li>
+<li><p>可以明确选择是否立即分配给某人，且该选项在界面上清晰可见、易于操作。</p></li>
+<li><p>当选择不分配时，待办事项成功标记为“未分配”状态，并在待办列表中正确显示该状态。</p></li>
 </ul>
 </section>
 </section>
@@ -368,7 +380,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./features/acting"
+            path: "./stories/acting"
         },
         predefinedOutput: true
     }
@@ -386,20 +398,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="README.html"
+       href="confirming_assignments.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">行动</p>
+        <p class="prev-next-title">确认分配</p>
       </div>
     </a>
     <a class="right-next"
-       href="confirming_assignments.html"
+       href="converting/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">确认分配</p>
+        <p class="prev-next-title">转换待办</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
