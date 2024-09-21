@@ -1,11 +1,23 @@
 format: jb-book
 root: index.md
 parts:
-  - caption: 产品特性
+  - caption: 用户画像
     chapters:
-      - file: features/acting/README.md
+      - file: personas/executors.md
+      - file: personas/coordinators.md
+      - file: personas/negotiators.md
+  - caption: 用户故事
+    chapters:
+      - file: stories/acting/README.md
         sections:
-          - file: features/acting/assigning_actions.md
-          - file: features/acting/confirming_assignments.md
-          - file: features/acting/creating_actions.md
-      - file: features/noting/README.md
+          - file: stories/acting/assigning_actions.md
+          - file: stories/acting/confirming_assignments.md
+          - file: stories/acting/creating_actions.md
+          - file: stories/acting/converting/README.md
+            sections:
+              - file: stories/acting/converting/converting_actions_to_plans.md
+      - file: stories/noting/README.md
+      - file: stories/deciding/README.md
+      - file: stories/planning/README.md
+      - file: stories/reporting/README.md
+      - file: stories/reviewing/README.md
