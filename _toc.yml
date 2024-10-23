@@ -21,3 +21,12 @@ parts:
       - file: stories/planning/README.md
       - file: stories/reporting/README.md
       - file: stories/reviewing/README.md
+      - file: stories/revolving/README.md
+        sections:
+          - file: stories/revolving/maintaining/README.md
+            sections:
+              - file: stories/revolving/maintaining/summarizing_intelligently.md
+          - file: stories/revolving/relating/README.md
+            sections:
+              - file: stories/revolving/relating/themes_relating_default_channels.md
+              - file: stories/revolving/relating/themes_relating_default_plans.md
