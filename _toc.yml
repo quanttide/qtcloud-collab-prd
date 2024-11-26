@@ -17,6 +17,7 @@ parts:
             sections:
               - file: stories/acting/converting/converting_actions_to_plans.md
       - file: stories/noting/README.md
+      - file: stories/assembling/README.md
       - file: stories/deciding/README.md
       - file: stories/planning/README.md
       - file: stories/reporting/README.md
