@@ -10,9 +10,9 @@ parts:
     chapters:
       - file: stories/acting/README.md
         sections:
+          - file: stories/acting/creating_actions.md
           - file: stories/acting/assigning_actions.md
           - file: stories/acting/confirming_assignments.md
-          - file: stories/acting/creating_actions.md
           - file: stories/acting/converting/README.md
             sections:
               - file: stories/acting/converting/converting_actions_to_plans.md
