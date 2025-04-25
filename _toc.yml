@@ -10,6 +10,7 @@ parts:
     chapters:
       - file: stories/acting/README.md
         sections:
+          - file: stories/acting/list_tasks.md
           - file: stories/acting/creating_actions.md
           - file: stories/acting/assigning_actions.md
           - file: stories/acting/confirming_assignments.md
